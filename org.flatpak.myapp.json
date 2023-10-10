@@ -1,0 +1,19 @@
+{
+  "app-id": "org.flatpak.myapp",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "master",
+  "sdk": "org.gnome.Sdk",
+  "command": "my-app",
+  "modules": [
+    {
+      "name": "my-app",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}
